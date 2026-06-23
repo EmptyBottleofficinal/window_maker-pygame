@@ -14,7 +14,8 @@ try:
         color3=int(color3)
         colorall=(color1,color2,color3)
     else:
-        print("error 3 is not allowed")
+        print("error: 3 is not allowed")
+        exit()
     dis1=input("display 1:random 2:choose")
     if dis1=="1":
         dis1=random.randint(100,900)
@@ -25,7 +26,8 @@ try:
         dis1=int(dis1)
         dis2=int(dis2)
     else:
-        print("error 3 is not allowed")
+        print("error: 3 is not allowed")
+        exit()
     cap=input("caption:")
     pygame.init()
     win=pygame.display.set_mode((dis1,dis2))
